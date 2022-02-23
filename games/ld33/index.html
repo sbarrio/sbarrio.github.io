@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>sbarrio.info</title>
+    <meta name="description" content="Sergio Barrio Slocker personal site">
+    <META NAME="keywords" content="sergio barrio slocker, sbarrio, devlog, personal site, game development, resume, cv, profile, blog, projects">
+    <meta name="distribution" content="global">
+    <meta name="robots" content="follow, all">
+    <meta name="language" content="en">
+    <link rel="stylesheet" type="text/css" href="../../css/main.css?1">    
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="../../img/favicon.ico" />
+        
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        
+    <script type="text/javascript" src="../../js/swfobject.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var el = document.getElementById("game");
+            swfobject.embedSWF("../../games/ld33/flash/CaveLord.swf", el, 640, 480, 10);
+        });
+    </script>
+        
+</head>
+
+<body>
+        
+    <div class="wrapper">
+		<div class="header">
+            <div class="robo"></div>
+            <div class="headerTitle">sbarrio.info</div>
+            <div class="backGameButton" onclick="location.href='/games.html'"> Back to game list</div>
+		</div>        
+    
+        <div class="gamePlayTitle">CaveLord (Ludum Dare 33 - 2015) </div>
+    
+        <div class="gamePlayHolder">
+            <div id="game">
+                Please allow Flash to work in order to play the web version.
+            </div>
+        </div>
+    
+        <div class="gamePlayDescription">
+            
+            <p>You are the lord and boss of one of the many dungeons and caves that populate a typical 8bit RPG world. </p>
+            <p>One day, your evil but peaceful ways are interrupted when a letter arrives at your inbox. Apparently a mighty RPG hero is raiding your cave in 3 days and he has his eyes set on your hide. </p>
+            <p>This means that you must train and get stronger before the hero arrives, so you can defend yourself. You are not like the rest of final bosses, the RPG hero's streak ends with you! (right?) </p>
+            <br>
+            <p>You have 3 days to explore your cave and fight against any enemy you find. You must fight to get experience and get stronger, or the Hero will kill you easily on the 4th day. Good luck! </p>
+        </div>
+    
+        <div class="gamePlayNotes">
+            <p> - Controls - </p>
+            <p> Arrows for movement (action selection during battle) </p>
+            <p> Space to confirm selection  </p>
+        </div>
+        
+        <div class="gamePlayDownload">
+            <p><u>Download</u></p>
+            <br>
+            <div class="downloadButton" onclick="location.href='../../games/ld33/mac/CaveLord.zip'">OS X</div>
+            <div class="downloadButton" onclick="location.href='../../games/ld33/linux/CaveLord.zip'">Linux</div>
+            <div class="downloadButton" onclick="location.href='../../games/ld33/flash/CaveLord.swf'">Flash</div>
+        </div>
+        
+    </div>
+    
+</body>
+        
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60398999-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    
+</html>

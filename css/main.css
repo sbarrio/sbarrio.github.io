@@ -1,0 +1,375 @@
+
+* { margin: 0; padding: 0; }
+
+html { height:100%; }
+
+body {
+    background: #222;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+    font-family: 'Source Code Pro';
+    color: #000;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+a { color:#007ca5; text-decoration:none; outline: none; }
+a:visited { color:#666; }
+a:active { color:#999; }
+
+.left_col a { color:#fff; text-decoration: none; outline: none; }
+.left_col a:hover { color:#fff; text-decoration: underline; outline: none; }
+.left_col a:visited { color:#fff; }
+.left_col a:active { color:#fff; }
+
+img, a img { border-style: none; }
+
+h1, .h1 { font-size: 2.4em; }
+h2, .h2 { font-size: 2em; } /* 20pt */
+h3, .h3 { font-size: 1.8em; } /* 18pt */
+h4, .h4 { font-size: 1.6em; } /* 16pt */
+h5, .h5 { font-size: 1.4em; } /* 14pt */
+h6, .h6 { font-size: 1.1em; } /* 11pt */
+
+.small { font-size: .9em; }
+
+.clearer { clear:both; }
+
+.header {
+    text-align: left;
+    background: #4f0f00;
+    color: #EFEFEF;
+    width: 980px;
+    margin: 0 0 0 0;
+    border: 0;
+    padding: 10px;
+    overflow: hidden;
+    border-bottom: 2px solid rgb(212, 203, 84);;
+    background:#222;
+}
+
+.headerTitle{
+    padding: 15px;
+    font-size: 20px;
+    float:left;
+}
+
+.robo{
+	background:url("../img/robo_flat.png");
+	width:40px;
+	height: 50px;
+    float:left;
+}
+
+.bg{
+    width: 750px;
+    height: 400px;
+    background:url("../img/bg.png");
+}
+
+.left_col {
+    text-align: left;
+    float: left;
+    background: #88854E;
+    color: #fff;
+    width: 160px;
+    margin: 0 0 0 0;
+    border: 0;
+    padding: 10px;
+    height: 100%;
+    border-right: 1px solid rgb(212, 203, 84);
+    min-height: 600px;
+}
+
+.post{
+    padding: 10px;
+    margin-bottom:10px;
+}
+
+.postTitle{
+    font-size: 30px;
+    padding: 5px;
+    border-bottom: 1px solid rgb(212, 203, 84);;
+    margin-bottom: 15px;
+}
+.postDate{
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #d5cc54;
+}
+.postBody{
+    font-size: 17px;
+}
+
+.postImg{
+    margin: 0 auto;
+    display: block;
+}
+
+.postImg300{
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+.imgColumn{
+    width:360px;
+    float:left;
+}
+
+.postImgFixed{
+    width:48%;
+    margin-right: 10px;
+}
+
+.comments{
+    margin-top:30px;
+}
+
+.main_col {
+    text-align: left;
+    float: right;
+    color: #EFEFEF;
+    width: 780px;
+    min-height: 600px;
+    margin: 0 0 0 0;
+    border: 0;
+    overflow: hidden;
+    background: #222;
+    padding-top:10px;
+}
+
+.main_col p{
+    font-size:16px;
+}
+
+.main_col h1{
+    font-size: 30px;
+    color: #D4CB54;
+}
+
+.mailWrapper{
+    padding: 20px;
+    text-align: center;
+}
+
+.mailButton{
+    margin: 0 auto;
+    background: url(../img/mail.png) no-repeat;
+    height: 25px;
+    width: 50px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.emailLink{
+    color: #EFEFEF !important;
+    font-size: 25px;
+}
+
+.gameCell{
+    width: 250px;
+    height: 200px;
+    margin-right: 5px;
+    cursor: pointer;
+    float: left;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border: 2px outset rgb(108, 128, 129);
+}
+
+.gameTitle{
+    position: absolute;
+    z-index: 1;
+    font-size: 16px;
+    width: 250px;
+    text-align: center;
+    background: rgb(68, 131, 202);
+}
+
+.gameTitle.black{
+    color: #222!important;
+}
+
+.gameCell img{
+    width: 250px;
+    position: absolute;
+}
+
+.gamesHeader{
+    width: 650px;
+    text-align: left;
+    float:left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 32px;
+}
+
+.robot{
+    background:url("../img/robot2_anim1.gif");
+    height: 128px;
+    width: 128px;
+    float:left;
+    margin-top: 50px;
+    position: absolute;
+    margin-left: 75px;
+}
+
+.titleNotFound{
+    text-align: center;
+    font-size: 30px!important;
+    margin-top: 96px;
+}
+
+.me{
+    background: url("../img/me_full.png");
+    height: 251px;
+    width: 118px;
+    float: left;
+    margin-top: -10px;
+    margin-left: 310px;
+}
+
+.columnButton{
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+    border: 5px outset rgb(177, 171, 56);
+    border-radius: 10px;
+    text-align: center;
+    background: rgb(212, 203, 84);
+    margin-top: 5px;
+}
+
+.columnButton:hover{
+    background:rgb(177, 171, 56);
+    border:5px inset rgb(212, 203, 84);
+}
+
+.otherHolder{
+    float: left;
+    width: 180px;
+    height: 200px;
+    margin-left: 10px;
+    text-align: center;
+}
+.otherHolder img{
+    cursor:pointer;
+}
+
+.otherHolder a{
+    font-size: 21px;
+    color: #EFEFEF;
+}
+
+.footer {
+    text-align: left;
+    background: #222;
+    color: #EFEFEF;
+    width: 980px;
+    margin: 0 0 0 0;
+    border: 0;
+    padding: 10px;
+    font-size: 14px;
+    overflow: hidden;
+    border-top: 2px solid rgb(212, 203, 84);;
+}
+
+.wrapper {
+    text-align: center;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.backGameButton{
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+    border: 5px outset rgb(177, 171, 56);
+    border-radius: 10px;
+    text-align: center;
+    background: rgb(212, 203, 84);
+    margin-top: 5px;
+    color: #FFFFFF;
+    width: 250px;
+    float: right;
+}
+
+.backGameButton:hover{
+    background:rgb(177, 171, 56);
+    border:5px inset rgb(212, 203, 84);
+}
+
+.gamePlayTitle{
+    position: relative;
+    font-size: 25px;
+    margin-top: 15px;
+    width: 1000px;
+    text-align: center;
+    color: #d4ca54;
+}
+
+.gamePlayHolder{
+    position: relative;
+    min-width: 400px;
+    min-height: 300px;
+    margin: 0 auto;
+    background: #171616;
+    margin-top: 10px;
+    color: #FFFFFF;
+}
+
+.gamePlayDescription{
+    position: relative;
+    font-size: 15px;
+    margin-top: 15px;
+    width: 1000px;
+    text-align: left;
+    color: #d4ca54;
+}
+
+.gamePlayNotes{
+    position: relative;
+    font-size: 15px;
+    margin-top: 15px;
+    width: 1000px;
+    text-align: left;
+    color: #d4ca54;
+}
+
+.gamePlayDownload{
+    position: relative;
+    font-size: 15px;
+    margin-top: 15px;
+    width: 1000px;
+    text-align: left;
+    color: #d4ca54;
+    margin-bottom : 15px;
+}
+
+.downloadButton{
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 15px;
+    border: 5px outset rgb(177, 171, 56);
+    border-radius: 10px;
+    text-align: center;
+    background: rgb(212, 203, 84);
+    margin-top: 5px;
+    color: #FFFFFF;
+    min-width: 100px;
+}
+
+.downloadButton:hover{
+    background:rgb(177, 171, 56);
+    border:5px inset rgb(212, 203, 84);
+}
+
+

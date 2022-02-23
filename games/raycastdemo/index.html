@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>sbarrio.info</title>
+    <meta name="description" content="Sergio Barrio Slocker personal site">
+    <META NAME="keywords" content="sergio barrio slocker, sbarrio, devlog, personal site, game development, resume, cv, profile, blog, projects">
+    <meta name="distribution" content="global">
+    <meta name="robots" content="follow, all">
+    <meta name="language" content="en">
+    <link rel="stylesheet" type="text/css" href="../../css/main.css?1">    
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="../../img/favicon.ico" />
+        
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        
+    <script type="text/javascript" src="../../js/swfobject.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var el = document.getElementById("game");
+            swfobject.embedSWF("../../games/raycastdemo/ray.swf?1", el, 720, 576, 10);
+        });
+    </script>
+        
+</head>
+
+<body>
+        
+    <div class="wrapper">
+		<div class="header">
+            <div class="robo"></div>
+            <div class="headerTitle">sbarrio.info</div>
+            <div class="backGameButton" onclick="location.href='/games.html'"> Back to game list</div>
+		</div>        
+    
+        <div class="gamePlayTitle">HaxeFlixel raycasting demo  </div>
+    
+        <div class="gamePlayHolder">
+            <div id="game">
+                Please allow Flash to work in order to play the web version.
+            </div>
+        </div>
+    
+        <div class="gamePlayDescription">
+            <p> A simple demo of raycasting rendering done in HaxeFlixel. It has textured walls, minimap (on desktop versions) enemy and item rendering and a weapon overlay.
+            </p>
+            <br>
+            <p>Note: Runs significantly better on desktop builds when running on systems with a proper GPU.</p>
+        </div>
+    
+        <div class="gamePlayNotes">
+            <p> - Controls - </p>
+            <p> WASD - Movement </p>
+            <p> LEFT/RIGHT - Look around  </p>
+            <p> R - Toggle render modes </p>
+        </div>
+        
+         <div class="gamePlayDownload">
+            <p><u>Download</u></p>
+            <br>
+            <div class="downloadButton" onclick="location.href='../../games/raycastdemo/windows/Flixelstein3D.zip'">Windows</div>
+            <div class="downloadButton" onclick="location.href='../../games/raycastdemo/mac/Flixelstein3D.zip'">OS X</div>
+            <div class="downloadButton" onclick="location.href='../../games/raycastdemo/ray.swf'">Flash</div>
+        </div>
+        
+    </div>
+    
+</body>
+        
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60398999-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    
+</html>

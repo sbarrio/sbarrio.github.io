@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>sbarrio.info</title>
+    <meta name="description" content="Sergio Barrio Slocker personal site">
+    <META NAME="keywords" content="sergio barrio slocker, sbarrio, devlog, personal site, game development, resume, cv, profile, blog, projects">
+    <meta name="distribution" content="global">
+    <meta name="robots" content="follow, all">
+    <meta name="language" content="en">
+    <link rel="stylesheet" type="text/css" href="../../css/main.css?1">    
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="../../img/favicon.ico" />
+        
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        
+    <script type="text/javascript" src="../../js/swfobject.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var el = document.getElementById("game");
+            swfobject.embedSWF("../../games/wave/flash/Wave.swf", el, 640, 480, 10);
+        });
+    </script>
+        
+</head>
+
+<body>
+        
+    <div class="wrapper">
+		<div class="header">
+            <div class="robo"></div>
+            <div class="headerTitle">sbarrio.info</div>
+            <div class="backGameButton" onclick="location.href='/games.html'"> Back to game list</div>
+		</div>        
+    
+        <div class="gamePlayTitle">Wave (beta - 2015) </div>
+    
+        <div class="gamePlayHolder">
+            <div id="game">
+                Please allow Flash to work in order to play the web version.
+            </div>
+        </div>
+    
+        <div class="gamePlayDescription">
+            <p>An inmense storm has broken out and you must run away from the waves it has created!</p>
+            <br>
+            <p>Jump and avoid every obstacle in your way for as long as you can!</p>
+        </div>
+    
+        <div class="gamePlayNotes">
+            <p> - Controls - </p>
+            <p> JUMP - Left click or SPACEBAR </p>
+        </div>
+        
+<!--
+        <div class="gamePlayDownload">
+            <p><u>Download</u></p>
+            <br>
+            <div class="downloadButton" onclick="location.href='../../games/ld33/mac/CaveLord.zip'">OS X</div>
+            <div class="downloadButton" onclick="location.href='../../games/ld33/linux/CaveLord.zip'">Linux</div>
+            <div class="downloadButton" onclick="location.href='../../games/ld33/flash/CaveLord.swf'">Flash</div>
+        </div>
+-->
+        
+    </div>
+    
+</body>
+        
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60398999-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    
+</html>

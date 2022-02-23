@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>sbarrio.info</title>
+    <meta name="description" content="Sergio Barrio Slocker personal site">
+    <META NAME="keywords" content="sergio barrio slocker, sbarrio, devlog, personal site, game development, resume, cv, profile, blog, projects">
+    <meta name="distribution" content="global">
+    <meta name="robots" content="follow, all">
+    <meta name="language" content="en">
+    <link rel="stylesheet" type="text/css" href="css/main.css">    
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+</head>
+
+<body>
+
+  	<div class="wrapper">
+		<div class="header">
+            <div class="robo"></div>
+            <div class="headerTitle">sbarrio.info</div>
+		</div>
+
+		<div class="left_col">            
+            <div class="columnButton" onclick="location.href='/index.html'">About</div>
+            <div class="columnButton" onclick="location.href='/devlog.html'">Devlog</div>
+            <div class="columnButton" onclick="location.href='/games.html'">Games</div>
+            <div class="columnButton" onclick="location.href='/other.html'">Other</div>
+            <div class="columnButton" onclick="location.href='/pocketcam.html'">8B Camera</div>
+            <div class="columnButton" onclick="location.href='/contact.html'">Contact</div>
+		</div>
+
+		<div class="main_col">
+
+<!--
+            <div class="post">
+                <div class="postTitle"></div>
+                <div class="postDate"></div>
+                <div class="postBody"></div>
+            </div>
+-->
+            
+            <div class="post">
+                <div class="postTitle">New plan</div>
+                <div class="postDate">24/04/2018</div>
+                <div class="postBody">
+                    
+                    <p>It's been a while, isn't it?</p>
+                    <br>
+                    <p>The last two months have been quite intense life-wise, but not so much on the gamedev side of things. I have been mostly finishing some freelance work and trying to get a spot in any of the few small game companies that I like here in Spain. Sadly none of them have answered any of my messages, so after a time of consideration I decided to take another approach. I started looking for real life jobs that would allow for some flexibility, provide a good pay and allow me to learn new technologies.</p>
+                    <br>
+                    <p>The search process has been a bit underwhelming, but luckily I managed to find a place that looks promising, and after some consideration I accepted the offer they made me a week ago.</p> 
+                    <br>
+                    <p>Tomorrow is my first day, and I am looking forward to it.</p>
+                    <br>
+                    <p>But how does this work with my game-making plan you will rightly ask. Well, the idea is to get some funds during this year in order to secure a future source of income that will require no work at all. If everything goes right, by the end of the year I should be ready to have this setup working, allowing me to spend months working on game development 24/7.</p>
+                    <br>
+                    <p>This obviously doesn't mean that I'm not going to do any game development during the rest of the year, on the contrary, I'm starting to lay some groundwork on an 16-bit style RPG framework that will allow me to build a game I've had on my mind for almost 3 years now.</p>
+                    <br>
+                    <img class="postImg" style="width:450px;" src="img/rpg_test.png">    
+                    <br>
+                    <p>For the moment I'm building all the foundation for the framework, tilemaps, doors and gateways, transitions, player spawns, dialog systems, etc. Luckily I already have some legacy code that I can use that speeds things up inmensly.</p>
+                    <br>
+                    <p>That's pretty much it for the moment. We'll see how things turn out in the next few months, but I'm confident this is the way to go considering how the industry in Spain works at this time. You either make it on your own or you'll spend years waiting for an opporunity that will never come.</p>
+                    <br>
+                    <p>Good thing is I am all up for taking on the challenge :)</p>
+                    <br>
+                    <p>See you next time!</p>
+                
+                    
+                </div>
+                
+                <div class="comments">
+                    <div id="disqus_thread"></div>
+                    <script>
+                        var disqus_config = function () {
+                            this.page.url = "http://sbarrio.info";  // Replace PAGE_URL with your page's canonical URL variable
+                            this.page.identifier = "sbarrioinfo"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                        };
+                        (function() { 
+                            var d = document, s = d.createElement('script');
+                            
+                            s.src = '//sbarrioinfo.disqus.com/embed.js';
+                            
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>                         </noscript>
+                
+                </div>
+                
+            </div>
+
+
+            <div class="post">
+                <div class="postTitle">Multiplayer ramblings</div>
+                <div class="postDate">02/02/2018</div>
+                <div class="postBody">
+                    
+                    <p>I have been thinking a lot lately about multiplayer games. </p>
+                    <p>Precisely the ones where all players share a big and expansive world, where they can explore, find stuff and talk to each other while doing it, but without forcing them to do it in teams or having to do things in a precise way.</p>
+                    <br>
+                    <p>For this reason, and after a long and nostaligc session of playing Phantasy Star Online on my Gamecube I decided I wanted to try and have a go at making my own persistent world, try new things and just let the thing grow by itself and see where it goes.</p>
+                    <br>
+                    <p>I mixed this with my late cravings of making a top down 2D RPG-Style game, and then I started coding, using Phaser.js and Node.js, so I wouldn't have to lose much time building the server.</p>
+                    <br>
+                    <p>The game's tentative title is <b>Island</b>, and its progressing little by little, but for now features a shared world with in-game chat.</p>
+                    <p>And it looks like this:</p>
+                    <br>
+                    
+                    <div class="imgColumn" style="width:380px">
+                        <img class="postImg300" src="img/island_scr1.png">
+                        <br>
+                        <img class="postImg300" src="img/island_scr3.png">    
+                        <br>
+                    </div>
+                    
+                    <div class="imgColumn" style="width:380px">
+                        <img class="postImg300" src="img/island_scr2.png">
+                        <br>
+                        <img class="postImg300" src="img/island_scr4.png">    
+                        <br>
+                    </div>
+                    
+                    
+                    <p>I don't know where it is going and when will it be done, but for now I wan't to allow players to dig, cut grass and break rocks, as well as having a really big map full of treasures and enemies.</p>
+                    
+                    <br>
+                    
+                    <p>More news on it soon!</p>
+                    
+                </div>
+            </div>
+           
+            <div class="post">
+                <div class="postTitle">Ludum Dare 40, retro 3D and what's next</div>
+                <div class="postDate">02/01/2018</div>
+                <div class="postBody">
+                    
+                    <p>Well well, just 2 days ago we put and end to 2017, a year that has been a crossroads moment for my life, and I'm glad to say that I managed to take the better road :)
+                    </p>
+                    <br>
+                    <p>Since I managed to fix my working schedule (to work a lot less, that is) I now have a lot more time to spend on game development projects, and because of this I was finally able to take part on Ludum Dare again, which took part during the first weekend of december.</p>
+                    <br>
+                    <p>The theme this time was "The more you have, the worse it is", which I must say is a really nice one but right from the start I wasn't very confident about. Amazingly I came up with an idea almost instantly, and even better, I managed to stick with it instead of changing my mind after 3 hours of mindlessly working on something.</p>
+                    <br>
+                    <p>I wanted to make a small and mechanic-focused 2D platformer for quite some time, and I did just that. </p>
+                    <br><br>
+                    
+                    <div class="imgColumn" style="width:366px">
+                        <img class="postImg300" src="img/mizu_scr1.png">
+                        <br>
+                        <img class="postImg300" src="img/mizu_scr3.png">    
+                    </div>
+                    
+                    <p>Mizu is a water based platformer where you control a kitchen glass that uses its inherent ability to be filled with liquids in order to overcome its obstacles. In Mizu you can get filled with water and use it to put out fires, but also to change the way the character jumps and moves. You can use your extra weight to push switches or to jump less and be able to jump inside tight corridors that are full of spikes.</p>
+                    <br>
+                    <p>You can play it right <a href="/games/ld40/index.html">here</a>.</p>
+                    <br>
+                    <p>The game got some really nice reviews and people praised its level design, which is great news, considering I spent a lot of time trying to get the game's flow and design interesting on every stage. On top of that I managed to hit my all-time record on Ludum Dare, considering that Mizu ranked  161st Overall on the compo rankings.</p>
+                    <br><br>
+                    <p>With this done, and right after finishing Ludum Dare 40, I saw a few videos on Youtube about Id Software old FPS games, like Wolfenstein and Doom. I've always loved those games, but I actually never stopped to think about how complex would be to actually implement a simple raycasting engine to render "fake 3D" like they did. Turns out it wasn't that hard at all. The basic idea is really simple, and I figured I should be able to replicate that using HaxeFlixel. After all, all I neded was a way to render pixels on a screen and some basic vector calculations, so, how hard could it be?</p>
+                    <br>
+                    <p>Turns out that after a whole afternoon I achieved something that worked fairly good, and after a few days of tweaking and experimenting I finally got this <a href="/games/raycastdemo/index.html">little demo</a> up and running.</p>
+                    <br>
+                    <img class="postImg" src="img/ray.png">    
+                    <br>
+                    <p>And now for the new year resolutions. At the moment I am still thinking on what to do next. I have 2 ideas that I would like to turn into a full proper game, but I'm still considering the pros & cons of each one. Now that I have much more time to invest in a game I somehow got more picky about what I spend my time on. Funny. What I will probably do is build a small prototype of each one, and once that's done I will probably start with the one that clicks the most (that, or maybe scrap them both, who knows).</p>
+                    <br>
+                    <p>As a side project, I'm interested in making a really simple HTML5 multiplayer game, the sort of which you log in into a game and you just explore a level, where you meet people doing their own thing.</p>
+                    <br>
+                    <p>Anyway, decisions, decisions. We'll see where we go from here, but I'm really excited for this year. Let's make the most out of it :) </p>
+                    <br>
+                    <p>See you next time!</p>
+                    
+                </div>
+                
+            </div>
+
+            
+            <div class="post">
+                <div class="postTitle">Finally a console release.</div>
+                <div class="postDate">21/10/2017</div>
+                <div class="postBody">
+                    <p>I've made my first Game Boy game!</p>
+                    <br>
+                    <p>I started it a while ago, but now it is finally finished. It's a simple Shoot 'em up space game with endless swarms of enemies and a basic score and health system.</p>
+                    <br>
+                    <p>And it is called DMG.</p>
+                    <br>
+                    
+                    <div class="imgColumn" style="width:366px">
+                        <img class="postImg300" src="img/dmg1.png">
+                        <br>
+                    </div>
+                    
+                    <div class="imgColumn" style="width:366px">
+                        <img class="postImg300" src="img/dmg2.png">
+                        <br>
+                    </div>
+                    
+                    <p>The cool thing is that it runs on real hardware as well, and performs even better than on emulators.</p>
+                    <br>
+                    <p>You can play it right <a href="/games/dmg/">here</a>.</p>
+                    <br>
+                    <p>Cheers!</p>
+                </div>
+            </div>
+
+            
+            <div class="post">
+                <div class="postTitle">Half a year later, half the world later.</div>
+                <div class="postDate">18/09/2017</div>
+                <div class="postBody">
+                    <p>Well, here I am back again.</p>
+                    <br>
+                    <p>As mentioned in the enigmatic previous post I was about to do some important changes to my life, which finally led to what has been an amazing experience that has spanned almost for the last 6 months.</p>
+                    <br>
+                    <p>To describe it in simple words: me and a good friend have been travelling from Spain to Japan in our own camper van.</p>
+                    <br>
+                    <p>That is, we have crossed the whole Eurasian contintent from side to side, driving through 16 countries, doing 24000km over 4 months, and after that we have spent almost 2 months living and travelling around in the land of the rising sun.</p>
+                    <br>
+                    <p>It has been a liberating and thrilling experience that has completely felt like it lasted double the real amount of time. Every day was different, every day we did something new and everyday we slept in a lovely and interesting new location. </p>
+                    <br>
+                    <p>I feel inmensly happy to have been able to do this at last, since it was a project that had been on my mind for a really long time, and just as I suspected, it has only boosted my will to take on my own path even further (yeah, apprently to some people this kind of things are "scary" and "risky")</p>
+                    <br>
+                    
+                    <div class="imgColumn" style="width:366px">
+                        <img class="postImg300" src="img/trip1.jpg">
+                        <br>
+                        <img class="postImg300" src="img/trip2.jpg">
+                        <br>
+                    </div>
+                    
+                    <div class="imgColumn" style="width:366px">
+                        <img class="postImg300" src="img/trip3.jpg">
+                        <br>
+                        <img class="postImg300" src="img/trip4.jpg">
+                        <br>
+                    </div>
+                    
+                    <p>But this is a devlog, and we talk game making here. If you want to know more about this adventure you just have to check out our <a href="http://www.novolamos.com/en/">webpage</a>.</p>
+                    <br>
+                    <p>This world trip was only the first part of my plan for 2017. The second phase starts now, and the new goal right now is simple: to try and  build a career as a full time game developer.</p>
+                    <br>
+                    <p>Im going to start as a freelance developer (there are still bills to pay), but the target is to spend half my time doing so and the other half developing my own videogames (of which I have a few already in development and some almost ready to being released).</p>
+                    <br>
+                    <p>It feels a bit daunting, and not knowing exactly what lies in front of me in the near future is both scary and super exciting.</p>
+                    <br>
+                    <p>And so this new era begins :)</p>
+                </div>
+   
+            </div>
+
+            <div class="post">
+                <div class="postTitle">New year. New Life.</div>
+                <div class="postDate">10/01/2017</div>
+                <div class="postBody">
+                    <p> Well well, happy new year to you all!</p>
+                    <br>
+                    <p>It's amazing how time flies. It feels like 2016 was just getting warmed up when suddenly - BAM -, 2017 kicks down the door and scares that old fart of a year away. </p>
+                    <br>
+                    <p>Jokes aside, it's been a great year for me, I believe it has been the year where I've learned the most. Development-wise I got two apps released on mobile platforms, one of them being the before mentioned Frog game (which has had almost all my friends hooked on for the last few months) and the other my Game Boy Camera impersonator.
+                     They might not look like much, but having them releasing and performing as expected is a big step for me :)</p>
+                    <br>
+                    <p>On top of this, I managed to get a few other projects finished, like the <a href="http://sbarrio.info/epic_proto/index.html">Epic Switch prototype</a>   and my spare time project <a href="http://sbarrio.info/xeno_web/index.html">XEN0</a>.</p>
+                    <br>
+                    <p>Oh, and I've also finished a few game development courses, some focusing on Unity3D and others covering the design side of game development.</p>
+                    <br>
+                    <p>Now, for the non-development related stuff.</p>
+                    <br>
+                    <p>I've been working on a project that has been lingering inside my mind for almost 8 years, and 2017 is finally going to be the year when it becomes reality. I'm not ready to say much about it yet, but it involves a very good friend of mine and this little fellow you see here:
+                    </p>
+                    <br>
+                    <img class="postImg300" src="img/cobi.jpg">
+                    <br>
+                    <p>At the moment we are quite busy preparing everything, phisically and digitally, but what's for sure is that it will reshape the flow of our lives forever. Big changes are at hand (for the better, of course).</p>
+                    <br>
+                    <p>Oh, and I didn't forget about the secret game that appears on the Games section listed as "????". That is also being worked on and I'll deliver more news about it soon.</p>
+                    <br>
+                    <p>That's all for now, thanks for reading. See you next time!</p>
+                </div>
+   
+            </div>
+
+
+            <div class="post" >
+                <a name="wave"></a> 
+                <div class="postTitle">The Frog lives</div>
+                <div class="postDate">12/10/2016</div>
+                <div class="postBody">
+                    <p>Some time ago, while hanging out with some friends I ended up taking out my phone and showing the iOS build of Wave (the frog game) to one of them.
+                        This was a half-done debug build, considering I never got around to release the game, since I dind't felt it was good enough for an App Store/Google Play release.
+                    </p>
+                    <br>
+                    <p>
+                        My friend started playing the game a bit, and suddenly - and confronting my amazement - he seemed hooked. He wanted to play "just one more round" of it several times, and got really into it trying to beat my current high score (which he finally did beat).
+                        When he was done he just plainly told me: man, you should release this. It's fun.
+                    </p>
+                    <br>
+                    <p>
+                        I got back home and started listing what I thought was still missing from the game in order for it to be what I think was acceptable for a real world mobile release. Once it was done I realized it wasn't a long list, most of the tasks were quick, painless and added a lot of charisma into the game. I swiftly set to work and used any little I had in order to wrap it up once for all.
+                    </p>
+                    <br>
+                    <p>
+                        I finally finished it a few weeks ago, but life got in the way and I coouldn't find the time to upload the game to both the App Store and the Play Store. That is, until today. 
+                        <br><br>
+                        You can download the game right here, absolutely free of charge:
+                    </p>
+                    <br>
+                    <p>
+                        <a href="https://itunes.apple.com/us/app/wave!/id1154219864?ls=1&mt=8">App Store (iOS)</a>  
+                        <br>
+                        <a href="https://play.google.com/store/apps/details?id=com.sbarrio.wave">Google Play (Android)</a> 
+                    </p>
+                    <br>
+                    <p>
+                        I hope you enjoy it :)
+                    </p>
+                    <br>
+                    <p>
+                        P.S- I'm still working on various projects, the main one being the Coursera Capstone Project and the second a new prototype that I started during the last Ludum Dare. More news about them both soon!
+                    </p>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="postTitle">Game Boy Camera wannabe</div>
+                <div class="postDate">01/08/2016</div>
+                <div class="postBody">
+                    <p>
+                        Some time after taking the trip where I took my Game Boy Camera as main photography device, I decided to give it a shot and try to replicate the kind of photograhpy you can experience with it on iOS devices. 
+                    </p>
+                    <br>
+                    <p>I was sure I could achieve it, considering there are already some other apps that try to do just the same. But I felt that those other apps weren't that faithfull to the source material, expanding picture size to widescreen formats and really not being very strict on the resolution or color restrictions of the whole thing.
+                    </p>
+                    <br>
+                    <p>
+                        So here it is, my take on FUNtograhpy, as Nintendo called it, 20 years later. 
+                    </p>
+                    <br>
+                    <img class="postImg300" src="img/8B_photo.jpg">
+                    <br>
+                    <p>
+                        I can say that the end result is pretty convincing I believe, and it is already available for everybody to enjoy (yes, it is free :) )
+                    </p>
+                    <br>
+                    <p>
+                        And you can get it right <a href="https://itunes.apple.com/us/app/8b-camera/id1138865629?mt=8">here</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="postTitle">Summertime</div>
+                <div class="postDate">18/07/2016</div>
+                <div class="postBody">
+                    <p>The heat comes in hard through the window and I find myself here, sitting in front of the computer half-naked and writing this, while the cat lays on the floor with a --oh-god-please-make-it-stop-- kind of face.</p>
+                    <br>
+                    <img class="postImg" src="img/pepi_heat.png">
+                    <br>
+                    <p> But we are here to talk about games, my games to be more precise, and that's exaclty what I'm going to do.</p>
+                    <br>
+                    <p> During the last few months I have been busy wrapping up the late stages of the Unity3D Coursera lecture I mentioned earlier during the year, and I must say they have been very useful in more ways than I expected. I finished up a few assignment games for the course, but none of them are really that interesting to see. If you are still interested you can try the most "complete" one of them <a href="../../WebGL/index.html">here</a>.</p>
+                    <br>
+                    <p>Another unexpected development manifested itself in the opportunity to work with a friend of mine on a small VR project. He knew I was learning to work with Unity3D and needed help setting up a test environment to work with a few VR headsets, so I did exaclty that and learned a lot. He was also pleased and apparently very keen on continuing work towards a really interesting goal, so there will be news on the matter soon ;)</p>
+                    <br>
+                    <p>On the other hand, I tried to take part on Ludum Dare 35, considering that I wasn't able to do so on the prior edition. Sadly, I had an insane weekend going on and I couldn't start working on the theme until the last few hours of sunday afternoon. Either way, I kind of liked the idea I had for the jam so I decided to skip the deadline and the compo completely and still continue working on finishing the game during the next few weeks.</p>
+                    <br>
+                    <img class="postImg" src="img/xeno.png">
+                    <br>
+                    <p>The game is finished and it is called <a href="/xeno_web/index.html">XEN0</a>.</p>
+                    <br>
+                    <p>
+                     It involves a shape shifting Alien that has escaped out of its cage and is now loose around an enormous shpaceship. The player controls this beardy fellow you see above and must use a sonar-like device to track the alien's position. Since the alien can disguise itself in the shape of anything around him (tables, beds, lockers, computers, etc) players must be fast and effective, because their guns will only be able to shot once per charge, and every reload will take some time to complete. So, if you happen to miss a shot you better start running, because that xenomorph will be all over you in a matter of seconds.</p>
+                    <br>
+                    <p>I believe the game is really nothing out of the ordinary, but I enjoyed executing the idea and I got to try a few new things with the framework, like pathfinding and dynamic lights, which will be extremely useful on future projects.</p>
+                    <br>
+                    <p>Ok, let's now talk about the future months, shall we?</p>
+                    <br>
+                    <p>First, I have finally got to the last part of the Coursera Unity3D course, and that means I must now do the Course's capstone project, which is basically to design and develop a full game from scratch with Unity3D and then release it to the market. I'm pretty excited about this and I already have an idea for a game that I believe will be fun, interesting and more important, achievevable within the project's timeframe and sepetember 10th deadline.</p>
+                    <br>
+                    <p>Second, I am in the planning stages of another game that will pick up from the ashes of my other "big game" project, which has now been stopped permanently for a number of reasons. This new game picks up from ideas I had for a game as far back as 2013, and I'm really eager to put them into fruition. For now I'm just setting up the story, characters and core gameplay, as well as deciding a graphic style and theme. Coding won't start until I have finished the Coursera project's capstone, but I'll keep you posted on any developments.</p>
+
+                    <br>
+                    <p>Well, that's all for now, the intense heat won't let me write anymore and I believe it is time for a nice pint of gazpacho.</p>
+                    <br>
+                    <p>Cheers!</p>
+                </div>
+            </div>
+
+
+             <div class="post">
+                <div class="postTitle">Z80-powered photography</div>
+                <div class="postDate">04/03/2016</div>
+                <div class="postBody">
+                    <p>
+                        I love the Game Boy Camera. It's just so quintessentially Nintendo that by itself alone defines the whole company's way of doing things.
+                    </p>
+                    <br>
+                    <p>
+                        I didn't own one when I was a kid, but a friend of mine did (along the awesome Game Boy Printer) and I found it to be an amazing thing. Having a portable digital camera on your Game Boy in 1998 when even your parent's high-end Reflex camera was still using 35mm film was definitely something else.
+                    </p>
+                    <br>
+                    <p>
+                        Finally, I bought mine a few years ago on eBay, and even though I used it and played with it for a while I somehow forgot about it once again until last week, when I was planning a weekend trip with some friends and while wondering what camera to take along for the ride, suddenly the GB camera came to my mind as a flash.
+                    </p>
+                    <br>
+                    <p>
+                        Swiftly, I put some new batteries on my GB Color and started snapping pictures all weekend long.
+                    </p>
+                    <br>
+                    <p>
+                        It takes a bit of getting used to and mostly getting to know what kind of scenes suit best the 4 color low-resolution display, but when used properly it can capture almost anything quite well.
+
+                    </p>
+                    <br>
+                    <p>
+                        Here are a few examples of it:
+                    </p>
+                    <br>
+                    <div class="imgColumn">
+                        <img class="postImg300" src="img/gb/cat.jpg">
+                        <br>
+                        <img class="postImg300" src="img/gb/coast.jpg">
+                        <br>
+                        <img class="postImg300" src="img/gb/coast2.jpg">
+                        <br>
+                    </div>
+
+                    <div class="imgColumn">
+                        <img class="postImg300" src="img/gb/frog.jpg">
+                        <br>
+                        <img class="postImg300" src="img/gb/tea.jpg">
+                        <br>
+                        <img class="postImg300" src="img/gb/tunnel.jpg">
+                        <br>
+                    </div>
+
+                    <p>
+                        Apart from photography I still keep myself busy with the Coursera Game Design and Development specialization, which is now finishing its third stage. So far it's been great fun and I'm learning a lot. I'm really looking forward to getting to the last stage, where I will have to design, implement and publish a full fledged Unity game (for which I already have a few ideas).
+                    </p>
+                    <br>
+                    <p>
+                        See you soon!
+                    </p>
+                </div>
+            </div>
+            
+            <div class="post">
+                <div class="postTitle">Little update from the past</div>
+                <div class="postDate">21/01/2016</div>
+                <div class="postBody">
+                    <p>Busy as always, I don't really know why or how, but I suddenly decided to wrap up one of my long forgotten projects (among many :( ), this is, the HaxeFlixel port of one of my first attempts at videogame making: the Dude inside a Cave platformer.</p>
+                    <br>
+                    <p>It started life as a LibGdx project (geez) running on Android. I worked on it for quite some time, and it proved really useful when learning how to get tilemaps running and how to set up some basic platformer physics that were fun to play around with. After that, I moved on to to other things, and the game got compeltely forgoten inside my hard drive.</p>
+                    <br>
+                    <p>Then, when I found out about HaxeFlixel I decided to test the engine using the same old assets and tmx maps from the Cave game, so I somehow ported the whole thing and got it working in no time. I even added some new things I couldn't do on the original, like having destructable blocks, melee attacks and enemies wandering around levels. I somehow got everything working, but some other projects and jams came along and the Cave prototype was forgotten gathering dust once again.</p>
+                    <br>
+                    <img class="postImg" src="img/cave.png">
+                    <br>
+                    <p>That was, of course, unitl today. In less than an hour I fixed the remaining bugs on the melee attack system and got the maps nicely laid in a looping fashion, so at least you can go somewhere and die when falling off from cliffs. This means that even though it is a prototype you can still wander around levels and destroy a few things with no bugs present.</p>
+                    <br>
+                    <p>So, without further ado, there you go: <a href="/cave/index.html">THE CAVE PROTO</a></p>
+                    <br>
+                    <p>(Controls: arrows to move, A to jump, S to attack)</p>
+                    <br>
+                    <p>See you next time!</p>
+                </div>
+            </div>
+
+             <div class="post">
+                <div class="postTitle">Alive and kicking</div>
+                <div class="postDate">04/01/2016</div>
+                <div class="postBody">
+                    <p>Woah there, its actually been way too long since my last update.</p>
+                    <br>
+                    <p>Luckily this doesn't mean I've been laying on my butt doing nothing the whole time, I actually did quite a lot of stuff. First, I managed to took part in another Ludum Dare (33) and finally got through the making of a simple japanese style RPG game, with turn based battles and the lot. It was big fun to make and I'm looking forward to develop some nice ideas tha I have been sitting around for a long time for a game of this genre. </p>
+                    <br>
+                    <img class="postImg" src="img/cavelord1.png">
+                    <br>
+                    <p>Also, I've been experimenting with Phaser.js, which turns out to be a quite competent javascript game framework built on top of html5 canvas. It has the qualities to once again make me a believer in HTML5 as a proper platform for games. Well, just a little bit at least.</p>
+                    <br>
+                    <p> A month ago I started a Coursera specialization in Game development, base on Unity3D. It's been great fun so far and I'm learning inmensly. I'm just starting with the platform, but I already have a few experiments up and running, so expect to see more Unity stuff popping around here sometime soon.
+                    <br>    
+                    <br>
+                    <p>On the development side of things I managed to finish the Frog running game, which is called Wave. It didn't turn out to be as exciting as I thought  so I skipped the publishing on mobile platforms part of the plan in favor of the other big project I have laying around. Anyway, you can play the flash version of the game in the <a href="games.html">Games</a> section.</p>
+                    <br>
+                    <p>As I said, I'm still working on the big game, which has been delayed (for obvious reasons) until 2016. When I'm recovered from the New Year's madness I'll start planning things out and restarting work on it. </p>
+                    <br>
+                    <p>That's pretty much everything I have going on right now. More news soon. See ya later!</p>
+                    <br>
+                    <p>P.S- On a side note, I finally got myself a motorbike, and it is as sweet as I thougth it would be <3</p>
+                </div>
+            </div>
+            
+            <div class="post">
+                <div class="postTitle">Jams & curses</div>
+                <div class="postDate">22/04/2015</div>
+                <div class="postBody">
+
+                    <p>This last month has been terrible, at least game development-wise (it's been great on everything else :D ). The frog game got a bit stuck with no progress at all but I'm dealing with that right now. I'm going to work on it hard in the next few days and I'll try to wrap it up this weekend. </p>
+                    <br>
+                    <p>Apart from that, last weekend I took part on the Ludum Dare 32 compo. </p>
+                    <p> It has been my 4th attempt already (5th if you count the MiniLD of october) and even though I didn't like the theme that much, I managed to finish up something nice in time. The game is called CurseMan and you can play it right <a href="/ld32/flash/CurseMan.swf">here</a>.</p>
+                    <br>
+                    <img class="postImg" src="img/curse3.png">
+                    <br>
+                    <p>
+                        I'm trying to play and rate as many LD games as I can, and so far my game is getting quite a few positive comments. Let's see how it ranks up in two weeks when the voting ends.
+                    </p>  
+                    <br>
+                    <p>On a side note (not related in any way with gamedev) I'm thinking once again on getting a motorbike and riding it along being badass and all that. Cause that's how it works, right?</p>
+                    <br>
+                    <p>See ya!</p>
+                </div>
+            </div>
+
+            
+            <div class="post">
+                <div class="postTitle">Running frogs</div>
+                <div class="postDate">19/03/2015</div>
+                <div class="postBody">
+                    <p>I've been working a bit during the last two weeks experimenting and creating a few endless running games.</p>
+                    <br>
+                    <p>The first one was made for my weekly Strandedsoft post, where I also tested out Löve2D a bit. I liked the simple nature of the framework, but It somewhat felt a bit basic and primitive at some points, I guess it's my fault, because I've already got too used to how HaxeFlixel works and how it deals with the more tedious stuff for me.</p>
+                    <br>
+                    <p>Anyway, as soon as I finished making that simple tutorial game I started wondering a bit about making a more complete game for mobile devices around this simple running and jumping theme. I've been wanting to make a game like this for a while and I think it is good practice to go through the whole development and release process for the first time with a really simple game. </p>
+                    <br>
+                    <p>This way I might be able to get used to the whole porting and screen fitting ordeal without having to deal with a ton of more complex stuff that will rise up with a more complex game.</p>
+                    <br>
+                    <p>With this in mind, around 10 days ago I started building a very simple run & jump game with HaxeFlixel. It features this rather troubled running frog: </p>
+                    <br>
+                    <img class="postImg" src="img/frog.png">
+                    <br>
+                    
+                    <p>It is already playable and running on iOS and Android, and I hope for it to be available on both app stores by april.</p>
+                    <br>
+                    <p>It's going to be really simple and straightforward, but I want for it to be a testbed for all those little and awful details that only show up when you actually try to release something to the world.</p>
+                    <br>
+                    <p>More news soon.</p>
+                    <br>
+                </div>
+            </div>
+            
+            <div class="post">
+                <div class="postTitle">Beginning</div>
+                <div class="postDate">01/03/2015</div>
+                <div class="postBody">
+                    <p>Well, looks I finally managed to get myself to build my own site in a somewhat presentable and proper way. </p>
+                <br> 
+                    <p>About fricking time.</p>
+                <br>
+                <p>Anyway, since this is going to be a devlog concerning my games I should get straight to the point.</p>
+                <br>
+                <p>This january I started working on what I want to be my first publicly released game. With this I mean that I want for it to be 
+                    avaiable on mobile platforms (Android and iOS primarily, but a web version is probably coming, too) and that it is going to be a complete and fully playable full-featured game. 
+                </p>
+                    <br>
+                <p>
+                    It is actually kind of a big deal for me, as it's the first time I'm attempting something like this, but at this point I think is the best  way to grow as a game developer (and maybe the true and only one). If I'm ever going to get serious about this there must be a boiling point at some moment, and I think now is as better time as any other.
+                </p>
+                <br>
+                <p>Concerning its development, I already got a playable version with basic touch controls up and working, which was something that worried me and that I'm really glad turned out to work nicely and easy.
+                </p>
+                <br>
+                <p>Level loading is also working, getting json parsing to work on HaxeFlixel was a bit strange at first but I managed to get it working. Now it should be really easy to create tons of levels fast using a simple text editor.</p>
+                <br>
+                <p>
+                    Right next I have to finish implementing item usage, which shouldn't take long. Afterwards I'll have to start working on the NPC AI, which I still have to decide on how it will operate in detail. That is going to be a tough one.
+                </p>
+                <br>
+                <p>Well, that's it for now. I'll try to update this as often as I can since I think it is going to help quite a bit on getting me focused on what's important and what needs to be done.</p>    
+                <br>
+                <p>See you soon.</p>
+                </div>
+            </div>
+		</div>
+
+		<br class="clearer">
+
+		<div class="footer">
+
+			<span class="small">
+                <script type="text/javascript">document.write(new Date().getFullYear()); </script> - sbarrio
+			</span>
+
+		</div>
+
+  	</div>
+
+</body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60398999-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript" src="js/main.js"></script>
+
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="25" height="13" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="rock_tile" tilewidth="32" tileheight="32">
+  <image source="../../images/maps/rock_tile.png" width="256" height="128"/>
+ </tileset>
+ <layer name="bg" width="25" height="13">
+  <data encoding="base64" compression="zlib">
+   eJzjZ2Bg4MeBxUnAuMzAhiUYyANiNDafWHsEKDQfBvhG7RgUdrABMTse8ym1g42A2cgY5A4OPG7EJk+K+ciYg4AZyPL4wp8QhgFy5emNATIOCug=
+  </data>
+ </layer>
+ <layer name="fg" width="25" height="13">
+  <data encoding="base64" compression="zlib">
+   eJy1lMsKgCAUBU+PTVaLHpuM/v83U1A6iGbkVZhNxoxgXQVAOTaUr4V8IRJ+7qwV/WHL+sdKfu7UbuBDo8/sHwZtOF/eid0Fe6dMI7euxHP27oX+VKPEG2u0jk7I693c8P+I1PfV4Dm3hxuzAAPSs0RF+n8IZ4jlBngTBJo=
+  </data>
+ </layer>
+ <layer name="fg+" width="25" height="13">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIKBBzID7QAoAAAT9AAd
+  </data>
+ </layer>
+</map>

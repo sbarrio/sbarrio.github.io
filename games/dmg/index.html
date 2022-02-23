@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>sbarrio.info</title>
+    <meta name="description" content="Sergio Barrio Slocker personal site">
+    <META NAME="keywords" content="sergio barrio slocker, sbarrio, devlog, personal site, game development, resume, cv, profile, blog, projects">
+    <meta name="distribution" content="global">
+    <meta name="robots" content="follow, all">
+    <meta name="language" content="en">
+    <link rel="stylesheet" type="text/css" href="../../css/main.css?1">    
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="../../img/favicon.ico" />
+        
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+            
+    <!--
+
+     JSGB v0.02 - a JavaScript Nintendo GameBoy Emulator
+     Copyright (C) 2009 Pedro Ladaria <Sonic1980 at Gmail dot com>
+
+     This program is free software; you can redistribute it and/or
+     modify it under the terms of the GNU General Public License
+     version 2 as published by the Free Software Foundation.
+     The full license is available at http://www.gnu.org/licenses/gpl.html
+
+     This program is distributed in the hope that it will be useful,
+     but WITHOUT ANY WARRANTY; without even the implied warranty of
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+     GNU General Public License for more details.
+
+    -->
+    <script src="toolbox.js" type="application/x-javascript"></script>
+    <script src="scrollbar.js" type="application/x-javascript"></script>
+    <script src="jsgb.cpu.js" type="application/x-javascript"></script>
+    <script src="jsgb.memory.js" type="application/x-javascript"></script>
+    <script src="jsgb.rom.js" type="application/x-javascript"></script>
+    <script src="jsgb.interrupts.js" type="application/x-javascript"></script>
+    <script src="jsgb.input.js" type="application/x-javascript"></script>
+    <script src="jsgb.lcd.js" type="application/x-javascript"></script>
+    <script src="jsgb.timers.js" type="application/x-javascript"></script>
+    <script src="jsgb.debugger.js" type="application/x-javascript"></script>
+    <script src="jsgb.gameboy.js" type="application/x-javascript"></script>
+</head>
+<body>
+    
+    
+    
+    <body>
+    <div class="wrapper">
+		<div class="header">
+            <div class="robo"></div>
+            <div class="headerTitle">sbarrio.info</div>
+            <div class="backGameButton" onclick="location.href='/games.html'"> Back to game list</div>
+		</div>        
+    
+        <div class="gamePlayTitle">DMG (2017) </div>
+    
+        <div class="gamePlayHolder">
+            <canvas id="LCD" width="160" height="144"></canvas>
+        </div>
+    
+        <div class="gamePlayDescription">
+            <p>A small SHUMP made for the Game Boy using <a href="http://gbdk.sourceforge.net/">GBDK</a>.</p>
+            <br>
+            <p>Also, it works on real hardware :)</p>
+            <p>Playable on the web (without sound) thanks to <a href="https://github.com/pladaria/JSGB/blob/master/index.htm">JSGB</a>.</p>
+        </div>
+    
+        <div class="gamePlayNotes">
+            <p> - Controls - </p>
+            <p> Arrow keys - to move around.</p>
+            <p> A key - Start</p>
+            <p> S key - Select</p>
+            <p> Z key - A (Shoot)</p>
+            <p> C key - B </p>
+        </div>
+        
+        <div class="gamePlayDownload">
+            <p><u>Download</u></p>
+            <br>
+            <div class="downloadButton" onclick="location.href='../../games/dmg/roms/dmg.gb'">Game Boy (.gb rom)</div>
+        </div>
+                
+    </div>
+        
+    <div class="hidden" style="display:none; visibility: hidden;">
+    <div id="STATUS">Pause</div>
+    <div id="DEBUG">&nbsp;</div>
+    <div id="DEBUGGER"></div>
+    <input id="BR" type="button" value="Run"   onfocus="this.blur();" onclick="gb_Run();"/>
+    <input id="BP" type="button" value="Pause" onfocus="this.blur();" disabled onclick="gb_Pause();"/>
+    <input id="BS" type="button" value="Step"  onfocus="this.blur();" onclick="gb_Step();"/>
+    <input id="BS" type="button" value="Reset"  onfocus="this.blur();" onclick="gb_Insert_Cartridge($('CARTRIDGE').value,true);"/>
+    <input id="BX" type="button" value="Size x2" onfocus="this.blur();" onclick="gb_Resize_LCD();"/>
+    </div>    
+        
+</body>
+
+<script type="application/x-javascript">
+
+var gbSeconds = 0;
+var gbFrames  = 0;
+
+function gb_Resize_LCD() {
+    $('LCD').style.width='480px';
+    $('LCD').style.height='432px';
+}
+
+function gb_Show_Fps() {
+  gbFrames+=gbFPS;
+  gbSeconds++;
+  $('STATUS').innerHTML = 
+    'Running: '+gbFPS+' '+
+    'fps - Average: '+(gbFrames/gbSeconds).toFixed(2)+' - '+
+    'Bank switches/s: '+gbBankSwitchCount;
+  gbFPS=0;
+  gbBankSwitchCount=0;
+}
+
+
+window.onload = function() {
+  gb_Resize_LCD();
+  gb_Insert_Cartridge("dmg.gb", true);
+}
+
+</script>
+    
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60398999-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

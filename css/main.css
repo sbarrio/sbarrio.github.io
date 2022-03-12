@@ -9,7 +9,7 @@ body {
     width: 100%;
     height: 100%;
     font-size: 62.5%;
-    font-family: 'Calibri, Verdana, Arial';
+    font-family: Calibri, Verdana, Arial;
     color: #000;
     margin: 0;
     border: 0;
@@ -143,7 +143,7 @@ h6, .h6 { font-size: 1.1em; } /* 11pt */
 }
 
 .main_col p{
-    font-size:16px;
+    font-size:18px;
 }
 
 .main_col h1{

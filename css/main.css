@@ -9,7 +9,7 @@ body {
     width: 100%;
     height: 100%;
     font-size: 62.5%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-family: 'Calibri, Verdana, Arial';
     color: #000;
     margin: 0;
     border: 0;
@@ -261,7 +261,7 @@ h6, .h6 { font-size: 1.1em; } /* 11pt */
 }
 
 .otherHolder a{
-    font-size: 21px;
+    font-size: 25px;
     color: #EFEFEF;
 }
 

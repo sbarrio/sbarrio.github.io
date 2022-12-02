@@ -13,14 +13,19 @@
     <link rel="shortcut icon" href="../../img/favicon.ico" />
         
     <script src="js/jquery.min.js"></script>
-        
+    <script type="text/javascript" src="js/swf2js.js"></script>
     <script type="text/javascript" src="../../js/swfobject.js"></script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         $(document).ready(function(){
             var el = document.getElementById("game");
             swfobject.embedSWF("../../games/golem/flash/Golem.swf", el, 640, 480, 10);
         });
-    </script>
+    </script> -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            swf2js.load("../../games/golem/flash/Golem.swf");
+        });
+    </script>  
         
 </head>
 

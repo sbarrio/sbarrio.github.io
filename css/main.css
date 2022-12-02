@@ -73,15 +73,11 @@ h6, .h6 { font-size: 1.1em; } /* 11pt */
 .left_col {
     text-align: left;
     float: left;
-    background: #88854E;
     color: #fff;
     width: 160px;
     margin: 0 0 0 0;
     border: 0;
     padding: 10px;
-    height: 100%;
-    border-right: 1px solid rgb(212, 203, 84);
-    min-height: 600px;
 }
 
 .post{
@@ -140,6 +136,9 @@ h6, .h6 { font-size: 1.1em; } /* 11pt */
     overflow: hidden;
     background: #222;
     padding-top:10px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    border-left: 1px solid rgb(212, 203, 84);
 }
 
 .main_col p{

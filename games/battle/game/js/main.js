@@ -115,7 +115,9 @@ var SceneTitle = Class.create(Scene, {
             enemySpeed=2;
             newEnemyTime = 1.5;
             game.replaceScene(new SceneGame());
-            game.assets['res/audio/bang.wav'].play();
+            if (soundEnabled) {
+                game.assets['res/audio/bang.wav'].play();
+            }
         }
         
         this.animationDuration += evt.elapsed * 0.001;       

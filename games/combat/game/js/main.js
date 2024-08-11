@@ -77,7 +77,6 @@ window.onload = function() {
         game.keybind(32, 'space');
 
         // Once Game finishes loading
-		console.log(level1, level2, level3);
         var scene = new GameScene(level1);
         game.removeScene(this);
         game.replaceScene(scene);
@@ -158,8 +157,6 @@ window.onload = function() {
 	// GameScene
 	var GameScene = Class.create(Scene, {
 	    initialize: function(level) {
-			console.log("initialize gamescene")
-			console.log(level)
 			//Scene vars
 			var player,gunHud,enemyHud,bulletPool,ammoLabel,lifeLabel,enemyLabel,enemyPool,playerGuns,handGun,machineGun,shotGun;
 
@@ -244,7 +241,8 @@ window.onload = function() {
         	var map = new Map(32, 32);
 			map.image = game.assets['res/ludumTile.png'];
 			this.level = level;
-			map.loadData(level.tile,level.obj);
+			console.log(level)
+			map.loadData(level.tile, level.obj);
 			map.collisionData = level.collision;
 			this.map = map;
 

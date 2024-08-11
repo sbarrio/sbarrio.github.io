@@ -17,9 +17,9 @@
   var enemyBulletSpeed = 5;
   var killPoints = 10;
   var fireSpeed = 0.5;
-  var maxBullets = 5;  //5 balas a la vez como máximo
+  var maxBullets = 5; 
   var enemyFireSpeed = 2.5;
-  var soundEnabled = true;
+  var soundEnabled = false; // Does not work properly on modern browsers
 
   var scoreLevel2 = 300;
 

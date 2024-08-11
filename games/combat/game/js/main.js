@@ -77,7 +77,7 @@ window.onload = function() {
         game.keybind(32, 'space');
 
         // Once Game finishes loading
-		console.log(level, level1, level2, level3)
+		console.log(level1, level2, level3);
         var scene = new GameScene(level1);
         game.removeScene(this);
         game.replaceScene(scene);

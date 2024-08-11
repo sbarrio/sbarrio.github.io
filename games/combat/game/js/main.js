@@ -144,9 +144,8 @@ window.onload = function() {
 	    },
 	    onenterframe: function(evt) {
 	    	if (game.input.space){
-	    		var level = new Level(level2,level2Obj,level2Collision);
                 game.removeScene(this);
-				game.replaceScene(new GameScene(level));
+				game.replaceScene(new GameScene(level2));
 	    	}
 	    }
 	});

@@ -98,31 +98,31 @@
 </body>
 
 <script type="application/x-javascript">
+    var gbSeconds = 0;
+    var gbFrames  = 0;
 
-var gbSeconds = 0;
-var gbFrames  = 0;
+    function gb_Resize_LCD() {
+        $('LCD').style.width='480px';
+        $('LCD').style.height='432px';
+    }
 
-function gb_Resize_LCD() {
-    $('LCD').style.width='480px';
-    $('LCD').style.height='432px';
-}
-
-function gb_Show_Fps() {
-  gbFrames+=gbFPS;
-  gbSeconds++;
-  $('STATUS').innerHTML = 
-    'Running: '+gbFPS+' '+
-    'fps - Average: '+(gbFrames/gbSeconds).toFixed(2)+' - '+
-    'Bank switches/s: '+gbBankSwitchCount;
-  gbFPS=0;
-  gbBankSwitchCount=0;
-}
+    function gb_Show_Fps() {
+        gbFrames+=gbFPS;
+        gbSeconds++;
+        $('STATUS').innerHTML = 
+            'Running: '+gbFPS+' '+
+            'fps - Average: '+(gbFrames/gbSeconds).toFixed(2)+' - '+
+            'Bank switches/s: '+gbBankSwitchCount;
+        gbFPS=0;
+        gbBankSwitchCount=0;
+    }
 
 
-window.onload = function() {
-  gb_Resize_LCD();
-  gb_Insert_Cartridge("dmg.gb", true);
-}
+    window.onload = function() {
+        gb_Resize_LCD();
+        gb_Insert_Cartridge("dmg.gb", true);
+    }
+</script>
 
 </body>
 </html>

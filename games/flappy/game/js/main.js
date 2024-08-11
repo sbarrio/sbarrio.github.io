@@ -116,7 +116,7 @@ window.onload = function() {
 
 			this.player.contact(function(){
 				if (gameState != GAME_OVER){
-					game.assets['res/hit.wav'].play();
+					//game.assets['res/hit.wav'].play();
 					gameState = GAME_OVER;	
 					blockSpeed = 0;
 					//show score and game over
@@ -178,7 +178,7 @@ window.onload = function() {
 		releasedKey: function(evt){
 			if (gameState == PLAYING){
 				this.player.applyImpulse(new b2Vec2(0, -upwards_accel));	
-				game.assets['res/flap.wav'].play();
+				//game.assets['res/flap.wav'].play();
 			}
 
 			if (gameState == READY){

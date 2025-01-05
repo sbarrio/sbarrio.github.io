@@ -130,7 +130,6 @@ h6, .h6 { font-size: 1.1em; } /* 11pt */
     float: right;
     color: #EFEFEF;
     width: 780px;
-    min-height: 600px;
     margin: 0 0 0 0;
     border: 0;
     overflow: hidden;

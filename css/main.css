@@ -17,8 +17,8 @@ body {
 }
 
 a { color:#007ca5; text-decoration:none; outline: none; }
-a:visited { color:#666; }
-a:active { color:#999; }
+a:visited { color:#807e0017; }
+a:active { color:#dfdc0017;; }
 
 .left_col a { color:#fff; text-decoration: none; outline: none; }
 .left_col a:hover { color:#fff; text-decoration: underline; outline: none; }

@@ -16,9 +16,9 @@ body {
     padding: 0;
 }
 
-a { color: #dfdc00d6; text-decoration:none; outline: none; }
-a:visited { color:#807e0017; }
-a:active { color:#dfdc00d6; }
+a { color: #dfdc00;; text-decoration:none; outline: none; }
+a:visited { color:#666504; }
+a:active { color:#dfdc00;; }
 
 .left_col a { color:#fff; text-decoration: none; outline: none; }
 .left_col a:hover { color:#fff; text-decoration: underline; outline: none; }

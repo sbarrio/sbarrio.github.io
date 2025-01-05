@@ -138,6 +138,7 @@ h6, .h6 { font-size: 1.1em; } /* 11pt */
     padding-left: 30px;
     padding-bottom: 20px;
     border-left: 1px solid rgb(212, 203, 84);
+    min-height: 300px;
 }
 
 .main_col p{
